@@ -1453,6 +1453,7 @@ interface RequestContext {
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export interface DatabaseAdapter extends BaseDatabaseAdapter {}
 export type { Payload, RequestContext }
+export { createAuthToken } from './auth/createAuthToken.js'
 export * from './auth/index.js'
 export { jwtSign } from './auth/jwt.js'
 export { JWT_AUTH_VERSION } from './auth/jwtAuth.js'
